@@ -4,22 +4,24 @@ import Page1 from "./../Components/Pages/page1";
 import Page2 from "./../Components/Pages/page2";
 import Page3 from "./../Components/Pages/page3";
 import Navbar from "./../Components/Layouts/Navbar";
+import Landing from "./../Components/Layouts/Landing";
+import { Element } from "react-scroll";
 
 class Home extends Component {
   render() {
     return (
-      <Container>
-        <Grid>
-          <Grid.Column width={6}>
-            <Navbar />
-          </Grid.Column>
-          <Grid.Column width={10}>
+      <div>
+        <Navbar />
+        <Landing />
+        <Container>
+          <p>THis is what we've become</p>
+          <Element name="Content">
             <Page1 />
             <Page2 />
             <Page3 />
-          </Grid.Column>
-        </Grid>
-      </Container>
+          </Element>
+        </Container>
+      </div>
     );
   }
 }
