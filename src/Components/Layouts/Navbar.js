@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Menu } from "semantic-ui-react";
-import classes from "../../../static/css/main.css";
+import classes from "../../../static/css/Navbar.css";
+import { Link as ScrollLink } from "react-scroll";
 
 export default class Navbar extends Component {
   state = { activeItem: "home" };
@@ -12,13 +13,21 @@ export default class Navbar extends Component {
 
     return (
       <div className={classes.navbar}>
-        <Menu pointing secondary fixed="top" inverted>
+        <Menu stackable borderless fixed="top">
           <Menu.Item
             name="home"
             active={activeItem === "home"}
             onClick={this.handleItemClick}
           >
-            <b>ferrets.io</b>
+            <ScrollLink
+              to="home"
+              spy={true}
+              smooth={true}
+              duration={700}
+              id="sclink"
+            >
+              <b>ferrets.io</b>
+            </ScrollLink>
           </Menu.Item>
           <Menu.Menu position="right">
             <Menu.Item
@@ -26,42 +35,90 @@ export default class Navbar extends Component {
               active={activeItem === "what"}
               onClick={this.handleItemClick}
             >
-              <b>What</b>
+              <ScrollLink
+                to="what"
+                spy={true}
+                smooth={true}
+                duration={700}
+                id="sclink"
+              >
+                <b>What</b>
+              </ScrollLink>
             </Menu.Item>
             <Menu.Item
               name="concept"
               active={activeItem === "concept"}
               onClick={this.handleItemClick}
             >
-              <b>Concept</b>
+              <ScrollLink
+                to="concept"
+                spy={true}
+                smooth={true}
+                duration={700}
+                id="sclink"
+              >
+                <b>Concept</b>
+              </ScrollLink>
             </Menu.Item>
             <Menu.Item
               name="why"
               active={activeItem === "why"}
               onClick={this.handleItemClick}
             >
-              <b>Why</b>
+              <ScrollLink
+                to="why"
+                spy={true}
+                smooth={true}
+                duration={700}
+                id="sclink"
+              >
+                <b>Why</b>
+              </ScrollLink>
             </Menu.Item>
             <Menu.Item
               name="When"
               active={activeItem === "When"}
               onClick={this.handleItemClick}
             >
-              <b>When</b>
+              <ScrollLink
+                to="when"
+                spy={true}
+                smooth={true}
+                duration={700}
+                id="sclink"
+              >
+                <b>When</b>
+              </ScrollLink>
             </Menu.Item>
             <Menu.Item
               name="technology"
               active={activeItem === "technology"}
               onClick={this.handleItemClick}
             >
-              <b>Technology</b>
+              <ScrollLink
+                to="technology"
+                spy={true}
+                smooth={true}
+                duration={700}
+                id="sclink"
+              >
+                <b>Technology</b>
+              </ScrollLink>
             </Menu.Item>
             <Menu.Item
               name="Who"
               active={activeItem === "Who"}
               onClick={this.handleItemClick}
             >
-              <b>Who</b>
+              <ScrollLink
+                to="who"
+                spy={true}
+                smooth={true}
+                duration={700}
+                id="sclink"
+              >
+                <b>Who</b>
+              </ScrollLink>
             </Menu.Item>
           </Menu.Menu>
         </Menu>
