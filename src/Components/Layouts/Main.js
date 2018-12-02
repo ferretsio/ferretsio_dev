@@ -14,17 +14,11 @@ export default props => {
       <Element name="what">
         <What />
       </Element>
-      <Element name="concept">
-        <Concept />
-      </Element>
       <Element name="why">
         <Why />
       </Element>
       <Element name="when">
         <When />
-      </Element>
-      <Element name="technology">
-        <Technology />
       </Element>
       <Element name="who">
         <Who />

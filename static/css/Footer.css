@@ -1,0 +1,28 @@
+.footer b {
+  font-size: 1.3em;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: rgb(27, 24, 24);
+  padding-left: 10ch;
+  padding-right: 5ch;
+}
+
+.apps {
+  padding-right: 8ch;
+}
+
+/* For Mobile */
+@media screen and (max-width: 540px) {
+  .footer b {
+    font-size: 0.9em;
+    font-weight: 500;
+  }
+}
+
+/* For Tablets */
+@media screen and (min-width: 540px) and (max-width: 780px) {
+  .footer b {
+    font-size: 1.1em;
+    font-weight: 500;
+  }
+}
