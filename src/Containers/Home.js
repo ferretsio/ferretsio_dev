@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Grid, Container } from "semantic-ui-react";
 import Navbar from "./../Components/Layouts/Navbar";
 import Landing from "./../Components/Layouts/Landing";
-import Main from "./../Components/Layouts/Main";
+import Portal from "./../Components/Layouts/Portal";
 import { Element } from "react-scroll";
 
 class Home extends Component {
@@ -12,11 +12,6 @@ class Home extends Component {
         <Navbar />
         <Element name="home" />
         <Landing />
-        <Container>
-          <Element name="Content">
-            <Main />
-          </Element>
-        </Container>
       </div>
     );
   }
