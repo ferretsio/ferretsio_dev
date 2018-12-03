@@ -1,35 +1,29 @@
 .what {
-  height: 400px;
+  height: 52vh;
   text-align: center;
   padding-top: 10%;
+  justify-content: center;
+  align-items: center;
+  background-color: #f89358;
+  background-image: linear-gradient(62deg, #f89358 0%, #ffdc3f 100%);
 }
 
 .concept {
-  height: 400px;
+  height: 50vh;
   text-align: center;
   padding-top: 10%;
 }
 
 .why {
-  height: 400px;
+  height: 52vh;
   text-align: center;
   padding-top: 10%;
-}
-
-.when {
-  height: 400px;
-  text-align: center;
-  padding-top: 10%;
+  justify-content: center;
+  align-items: center;
 }
 
 .technology {
-  height: 400px;
-  text-align: center;
-  padding-top: 10%;
-}
-
-.who {
-  height: 400px;
+  height: 50vh;
   text-align: center;
   padding-top: 10%;
 }

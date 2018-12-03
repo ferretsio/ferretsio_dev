@@ -13,7 +13,7 @@ export default class Navbar extends Component {
 
     return (
       <div className={classes.navbar}>
-        <Menu stackable borderless fixed="top">
+        <Menu borderless fixed="top">
           <Menu.Item
             name="home"
             active={activeItem === "home"}
@@ -46,21 +46,6 @@ export default class Navbar extends Component {
               </ScrollLink>
             </Menu.Item>
             <Menu.Item
-              name="concept"
-              active={activeItem === "concept"}
-              onClick={this.handleItemClick}
-            >
-              <ScrollLink
-                to="concept"
-                spy={true}
-                smooth={true}
-                duration={700}
-                id="sclink"
-              >
-                <b>Concept</b>
-              </ScrollLink>
-            </Menu.Item>
-            <Menu.Item
               name="why"
               active={activeItem === "why"}
               onClick={this.handleItemClick}
@@ -88,21 +73,6 @@ export default class Navbar extends Component {
                 id="sclink"
               >
                 <b>When</b>
-              </ScrollLink>
-            </Menu.Item>
-            <Menu.Item
-              name="technology"
-              active={activeItem === "technology"}
-              onClick={this.handleItemClick}
-            >
-              <ScrollLink
-                to="technology"
-                spy={true}
-                smooth={true}
-                duration={700}
-                id="sclink"
-              >
-                <b>Technology</b>
               </ScrollLink>
             </Menu.Item>
             <Menu.Item
