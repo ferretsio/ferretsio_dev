@@ -27,11 +27,12 @@ export default class  extends Component {
     }
   ];
   
-  renderMenuItem = (itemName, itemTag, activeItem) => {
+  renderMenuItem = (itemName, itemTag, activeItem, index) => {
     return (
       <Menu.Item
         name={itemName}
         active={activeItem === itemName}
+        key={index}
       >
         <ScrollLink
           to={itemName}
@@ -52,7 +53,7 @@ export default class  extends Component {
         <Menu borderless fixed="top">
           {this.renderMenuItem("home", "ferrets.io", activeItem)}
           <Menu.Menu position="right">
-            {this.menuItems.map(mItem => this.renderMenuItem(mItem.itemName, mItem.itemTag, activeItem))}
+            {this.menuItems.map((mItem, index) => this.renderMenuItem(mItem.itemName, mItem.itemTag, activeItem, index))}
           </Menu.Menu>
         </Menu>
       </div>
