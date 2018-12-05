@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import classes from "../../../static/css/When.css";
-import { Transition, Segment, Grid, Header } from "semantic-ui-react";
+import {Transition, Segment, Grid} from "semantic-ui-react";
 
 export default class When extends Component {
   state = {
@@ -28,12 +28,12 @@ export default class When extends Component {
     const time = new Date();
     // set time units
     const hours = Math.abs(24 - time.getHours() - 1);
-    const minutes = Math.abs(60 - time.getMinutes());
-    const seconds = Math.abs(60 - time.getSeconds());
+    const minutes = Math.abs(60 - time.getMinutes() - 1);
+    const seconds = Math.abs(60 - time.getSeconds() - 1);
 
     const timeDiff = Math.abs(this.state.endDate.getTime() - time.getTime());
-    const diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
-    const days = diffDays;
+    const days = Math.ceil(timeDiff / (1000 * 3600 * 24)); // diff days
+
     // on hour chanage, update hours and shuffle state
 
     if (days !== this.state.days) {
