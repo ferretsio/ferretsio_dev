@@ -22,31 +22,30 @@ export default class Footer extends Component {
               </b>
             </ScrollLink>
           </Menu.Item>
-          <Menu.Item name="home">Built by: Pranav Kanade</Menu.Item>
+          <Menu.Item>
+            <a href="https://www.allnighter.in" target="_blank">
+              Built by: Pranav Kanade
+            </a>
+          </Menu.Item>
           <Menu.Menu position="right" className={classes.apps}>
             <Menu.Item>
-              <a href="https://ferrestio.slack.com/messages">
+              <a href="https://www.facebook.com/ferretsio" target="_blank">
+                <Icon name="facebook" size="huge"/>
+              </a>
+            </Menu.Item>
+            <Menu.Item>
+              <a href="https://twitter.com/FerretsIo" target="_blank">
+                <Icon name="twitter" size="huge" color="blue"/>
+              </a>
+            </Menu.Item>
+            <Menu.Item>
+              <a href="https://ferrestio.slack.com/messages" target="_blank">
                 <Icon name="slack" size="huge" color="green" />
               </a>
             </Menu.Item>
             <Menu.Item>
-              <a href="https://github.com/ferretsio">
+              <a href="https://github.com/ferretsio" target="_blank">
                 <Icon name="github" size="huge" color="black" />
-              </a>
-            </Menu.Item>
-            <Menu.Item>
-              <a href="https://github.com/ferretsio">
-                <Icon name="twitter" size="huge" color="blue" />
-              </a>
-            </Menu.Item>
-            <Menu.Item>
-              <a href="https://github.com/ferretsio">
-                <Icon name="facebook" size="huge" />
-              </a>
-            </Menu.Item>
-            <Menu.Item>
-              <a href="https://github.com/ferretsio">
-                <Icon name="instagram" size="huge" color="red" />
               </a>
             </Menu.Item>
           </Menu.Menu>
